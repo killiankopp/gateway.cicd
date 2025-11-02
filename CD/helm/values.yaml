@@ -1,6 +1,6 @@
 app:
-  name: karned-gateway
-  image: killiankopp/api-gateway:0.1.1
+  name: amazone-gateway
+  image: killiankopp/api-gateway:amazone-latest
   replicas: 1
-  url: api.karned.bzh
-  namespace: karned
+  url: api.amazone.lan
+  namespace: amazone

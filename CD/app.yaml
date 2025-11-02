@@ -1,17 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: karned-gateway
+  name: amazone-gateway
   namespace: argocd
 spec:
-  project: karned
+  project: amazone
   source:
-    repoURL: "https://github.com/karned-rekipe/gateway.cicd.git"
+    repoURL: "https://github.com/killiankopp/gateway.cicd.git"
     targetRevision: main
     path: CD/helm
   destination:
     server: https://kubernetes.default.svc
-    namespace: karned
+    namespace: amazone
   syncPolicy:
     automated:
       prune: true

@@ -1,5 +1,5 @@
 apiVersion: v2
 name: gateway-chart
-description: Chart Helm pour déployer la gateway de Karned
+description: Chart Helm pour déployer la gateway Amazone
 version: 1.0.0
 appVersion: "1.0"
