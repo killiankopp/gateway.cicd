@@ -31,8 +31,8 @@ spec:
     }
     environment {
         DOCKER_IMAGE = 'killiankopp/api-gateway'
-        URL_VERSION = 'https://raw.githubusercontent.com/karned-rekipe/gateway.cicd/main/CI/version'
-        URL_REPO = 'https://github.com/karned-rekipe/gateway.git'
+        URL_VERSION = 'https://raw.githubusercontent.com/killiankopp/gateway.cicd/main/CI/version'
+        URL_REPO = 'https://github.com/killiankopp/gateway.git'
     }
     stages {
         stage('Retrieve Version') {
@@ -57,7 +57,7 @@ spec:
             steps {
                 container('docker') {
                     sh """
-                    docker build -t ${DOCKER_IMAGE}:${DOCKER_TAG} .
+                    docker build -t ${DOCKER_IMAGE}:amazone-${DOCKER_TAG} .
                     """
                 }
             }
