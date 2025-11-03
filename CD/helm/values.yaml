@@ -1,6 +1,6 @@
 app:
   name: amazone-gateway
-  image: killiankopp/api-gateway:amazone-1.0.0
+  image: killiankopp/api-gateway:amazone-1.0.1
   replicas: 1
   url: api.amazone.lan
   namespace: amazone
