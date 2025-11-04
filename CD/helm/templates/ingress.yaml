@@ -5,7 +5,7 @@ metadata:
   namespace: {{ .Values.app.namespace }}
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
-    cert-manager.io/cluster-issuer: local-amazone
+    cert-manager.io/cluster-issuer: {{ .Values.app.certIssuer | default "local-amazone" }}
     nginx.ingress.kubernetes.io/backend-protocol: HTTP
     nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
 spec:
