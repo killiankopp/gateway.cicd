@@ -4,5 +4,5 @@ app:
   replicas: 1
   url: api.amazone.lan
   namespace: amazone
-  # Changez l'issuer pour Let's Encrypt
-  certIssuer: letsencrypt-staging  # ou letsencrypt-prod pour la production
+  # Utiliser l'issuer local qui fonctionne
+  certIssuer: local-amazone
